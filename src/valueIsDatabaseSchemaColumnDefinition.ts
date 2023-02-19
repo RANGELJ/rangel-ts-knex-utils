@@ -1,7 +1,7 @@
-import buildValueIsConstant from 'ts-validators/cjs/buildValueIsConstant'
-import buildValueIsOneOf from 'ts-validators/cjs/buildValueIsOneOf'
-import buildValueIsShape from 'ts-validators/cjs/buildValueIsShape'
-import valueIsString from 'ts-validators/cjs/valueIsString'
+import buildValueIsConstant from 'ts-validators/buildValueIsConstant'
+import buildValueIsOneOf from 'ts-validators/buildValueIsOneOf'
+import buildValueIsShape from 'ts-validators/buildValueIsShape'
+import valueIsString from 'ts-validators/valueIsString'
 import type { ColumnDefinition } from './types'
 
 const valueIsDatabaseSchemaColumnDefinition = buildValueIsShape<ColumnDefinition>('ColumnDefinition', {

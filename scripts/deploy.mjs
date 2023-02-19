@@ -14,35 +14,17 @@ const main = async () => {
     const packageDir = path.resolve(sourceDir, 'package.json')
     const packageData = await fs.readJSON(packageDir)
 
-    const commonJsTargetDir = path.resolve(targetDir, 'cjs')
     packageData.type = 'commonjs'
-    const libPackagePath = path.resolve(commonJsTargetDir, 'package.json')
+    const libPackagePath = path.resolve(targetDir, 'package.json')
     await fs.ensureFile(libPackagePath)
     await fs.writeJSON(libPackagePath, packageData, { spaces: 4 })
 
     await execa('npx', [
         'tsc',
         '--outDir',
-        commonJsTargetDir,
+        targetDir,
         '--module',
         'commonjs',
-    ], {
-        cwd: sourceDir,
-        stdio: 'inherit',
-    })
-
-    const esmTargetDir = path.resolve(targetDir, 'esm')
-    packageData.type = 'module'
-    const esmPackagePath = path.resolve(esmTargetDir, 'package.json')
-    await fs.ensureFile(esmPackagePath)
-    await fs.writeJSON(esmPackagePath, packageData, { spaces: 4 })
-
-    await execa('npx', [
-        'tsc',
-        '--outDir',
-        esmTargetDir,
-        '--module',
-        'ES6',
     ], {
         cwd: sourceDir,
         stdio: 'inherit',

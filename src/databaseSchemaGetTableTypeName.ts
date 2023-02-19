@@ -1,4 +1,4 @@
-import stringFirstCharacterToUpperCase from 'rangel-ts-utils/cjs/stringFirstCharacterToUpperCase'
+import stringFirstCharacterToUpperCase from 'rangel-ts-utils/stringFirstCharacterToUpperCase'
 
 const databaseSchemaGetTableTypeName = (tableName: string) => tableName
     .split('_')
