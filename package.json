@@ -1,6 +1,6 @@
 {
   "name": "rangel-ts-knex-utils",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A set of helpers to work with knex and ts and sync your types with your schema",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "knex": "^2.*.*"
   },
   "dependencies": {
-    "rangel-ts-utils": "5.0.0",
-    "ts-validators": "6.0.0"
+    "rangel-ts-utils": "5.0.1",
+    "ts-validators": "7.0.0"
   }
 }
