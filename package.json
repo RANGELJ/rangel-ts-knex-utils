@@ -17,7 +17,7 @@
     "knex": "^2.*.*"
   },
   "dependencies": {
-    "rangel-ts-utils": "5.0.1",
-    "ts-validators": "7.0.0"
+    "rangel-ts-utils": "^6.0.0",
+    "ts-validators": "^8.0.0"
   }
 }
