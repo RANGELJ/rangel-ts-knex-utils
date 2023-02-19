@@ -30,8 +30,6 @@ const main = async () => {
         stdio: 'inherit',
     })
 
-    await fs.copy(packageDir, path.resolve(targetDir, 'package.json'))
-
     await execa('npm', [
         'publish',
         '--userconfig',
