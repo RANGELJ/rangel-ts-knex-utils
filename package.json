@@ -1,6 +1,6 @@
 {
   "name": "rangel-ts-knex-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of helpers to work with knex and ts and sync your types with your schema",
   "main": "index.js",
   "scripts": {

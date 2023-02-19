@@ -1,7 +1,7 @@
 import unknownGetValueByPath from 'rangel-ts-utils/cjs/unknownGetValueByPath'
 import type { Knex } from 'knex'
-import valueIsArray from 'ts-validators/esm/valueIsArray'
-import valueIsString from 'ts-validators/esm/valueIsString'
+import valueIsArray from 'ts-validators/cjs/valueIsArray'
+import valueIsString from 'ts-validators/cjs/valueIsString'
 
 const databaseSchemaListTables = async (knex: Knex) => {
     const databaseName: unknown = knex.client.config.connection.database

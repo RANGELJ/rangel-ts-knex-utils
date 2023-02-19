@@ -1,5 +1,5 @@
 import type { Knex } from 'knex'
-import valueIsArray from 'ts-validators/esm/valueIsArray'
+import valueIsArray from 'ts-validators/cjs/valueIsArray'
 import valueIsDatabaseSchemaColumnDefinition from './valueIsDatabaseSchemaColumnDefinition'
 import { ColumnDefinition } from './types'
 
