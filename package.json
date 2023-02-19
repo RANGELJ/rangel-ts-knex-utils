@@ -4,7 +4,7 @@
   "description": "A set of helpers to work with knex and ts and sync your types with your schema",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "node ./scripts/deploy.mjs"
   },
   "author": "Rangel Peralta Jorge Luis",
   "license": "MIT",
