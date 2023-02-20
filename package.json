@@ -6,20 +6,22 @@
     "deploy": "node ./scripts/deploy.mjs"
   },
   "exports": {
-      "./*": {
-        "import": "./es6/*.mjs",
-        "require": "./cjs/*.js",
-        "types": "./types/*.d.ts"
-      }
+    "./*": {
+      "import": "./es6/*.mjs",
+      "require": "./cjs/*.js",
+      "types": "./types/*.d.ts"
+    }
   },
   "author": "Rangel Peralta Jorge Luis",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.19",
+    "execa": "^7.0.0",
+    "fs-extra": "^11.1.0",
     "knex": "^2.4.2",
-    "typescript": "^4.9.5",
     "rangel-ts-utils": "^7.0.5",
-    "ts-validators": "^9.0.6"
+    "ts-validators": "^9.0.6",
+    "typescript": "^4.9.5"
   },
   "peerDependencies": {
     "knex": "^2.*.*",
