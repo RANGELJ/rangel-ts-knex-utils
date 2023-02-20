@@ -80,11 +80,13 @@ const main = async () => {
         }
         const filePath = path.resolve(es6Dir, fileName)
         let fileContent = (await fs.readFile(filePath)).toString()
-        const matches = fileContent.match(/'\.\/[^]+?'/g)
+        const matches = fileContent.match(/('\.\/[^]+?')|("\.\/[^]+?")/g)
 
         if (matches) {
             matches?.forEach((match) => {
-                fileContent = fileContent.replace(match, match.replace(/'$/, ".mjs'"))
+                fileContent = fileContent.replace(match, match
+                    .replace(/'$/, ".mjs'")
+                    .replace(/"$/, '.mjs"'))
             })
         }
 
