@@ -1,6 +1,6 @@
 {
   "name": "rangel-ts-knex-utils",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "A set of helpers to work with knex and ts and sync your types with your schema",
   "scripts": {
     "deploy": "node ./scripts/deploy.mjs"
@@ -19,7 +19,7 @@
     "execa": "^7.0.0",
     "fs-extra": "^11.1.0",
     "knex": "^2.4.2",
-    "rangel-ts-utils": "^7.0.5",
+    "rangel-ts-utils": "^7.0.7",
     "ts-validators": "^9.0.6",
     "typescript": "^4.9.5"
   },
