@@ -31,7 +31,7 @@ const databaseSchemaListTables = async (knex: Knex) => {
         }
 
         return tableName
-    })
+    }).filter((tableName) => tableName !== 'knex_migrations_lock' && tableName !== 'knex_migrations')
 }
 
 export default databaseSchemaListTables
