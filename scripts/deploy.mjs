@@ -80,7 +80,7 @@ const main = async () => {
         }
         const filePath = path.resolve(es6Dir, fileName)
         let fileContent = (await fs.readFile(filePath)).toString()
-        const matches = fileContent.match(/'\.\/[^]+?'/)
+        const matches = fileContent.match(/'\.\/[^]+?'/g)
 
         if (matches) {
             matches?.forEach((match) => {

@@ -1,4 +1,3 @@
-import path from 'path'
 import type { Knex } from 'knex'
 import databaseSchemaGetTableTypescriptDefinition from './databaseSchemaGetTableTypescriptDefinition'
 import databaseSchemaListTables from './databaseSchemaListTables'
