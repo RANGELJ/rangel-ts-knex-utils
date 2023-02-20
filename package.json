@@ -1,10 +1,16 @@
 {
   "name": "rangel-ts-knex-utils",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "A set of helpers to work with knex and ts and sync your types with your schema",
-  "main": "index.js",
   "scripts": {
     "deploy": "node ./scripts/deploy.mjs"
+  },
+  "exports": {
+      "./*": {
+        "import": "./es6/*.mjs",
+        "require": "./cjs/*.js",
+        "types": "./types/*.d.ts"
+      }
   },
   "author": "Rangel Peralta Jorge Luis",
   "license": "MIT",
